@@ -3,17 +3,13 @@
     <div class="col-sm-4">
       {{#each burgerData}}
       {{#unless devoured}}
-      <h4>{{burger_name}} <button>Devoured!</button></h4>
+      <h4>{{burger_name}} <button class="devoured">Devoured!</button></h4>
       {{/unless}}
       {{/each}}
     </div>
-    <div class="col-sm-4"><img src="/assets/img/burger.jpg">
+    <div class="col-sm-4"><img src="/assets/img/burger.jpg" style="width: 320px">
 
       <h1>EAT-DA-BURGER!</h1>
-
-
-
-
 
       <form class="create-form">
 
@@ -23,10 +19,10 @@
         </div>
 
 
-        <button type="submit">Submit</button>
+        <button type="submit" class = "submitBtn">Submit</button>
       </form>
 
-      <p>Enter a burger you want to eat. Click the Submit button.</p>
+      <p>Enter a burger you want to eat. Click Submit.</p>
     </div>
     <div class="col-sm-4">
 
