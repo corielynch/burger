@@ -21,18 +21,12 @@ router.post("/api/burgers", function
         // Send back the ID of the new quote
         const newBurgerId = result.insertId;
         res.json({ id: result.newBurgerId });
-
-        console.log("this is newburgerid " , newBurgerId)
     });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
-    console.log("BEFORE " + req.params.id)
     var condition = "id = " + req.params.id;
-    console.log("AFTER " + req.params.id)
 
-    // console.log("condition is this " + condition);
-  
     burger.updateOne({
       devoured: req.body.devoured
     }, condition, function(data) {

@@ -24,10 +24,7 @@ $(function() {
 
       //var id = $(this).data("id");
       var id = $(this).parent().attr('id');
-
-      console.log("THIS IS ID " + id)
       var changeDevoured = $(this).data("devoured");
-
       var newDevouredState = {
       devoured: {devoured:true}
     };

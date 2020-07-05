@@ -8,7 +8,6 @@ var burger = {
         cbController(data)  
       })  
     },
-// The variables cols and vals are arrays.
     insertOne: function(columns, values, cbController) {
       orm.insertOne("burgers", columns, values, function(data) {
         cbController(data);
