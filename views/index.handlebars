@@ -3,7 +3,8 @@
     <div class="col-sm-4">
       {{#each burgerData}}
       {{#unless devoured}}
-      <h4>{{burger_name}} <button class="devoured">Devoured!</button></h4>
+      <h4 id='{{id}}'>{{burger_name}} 
+        <button type= "submit" class="devoured">Devoured!</button></h4>
       {{/unless}}
       {{/each}}
     </div>
@@ -19,18 +20,18 @@
         </div>
 
 
-        <button type="submit" class = "submitBtn">Submit</button>
+        <button type="submit" class="submitBtn">Submit</button>
       </form>
 
       <p>Enter a burger you want to eat. Click Submit.</p>
     </div>
     <div class="col-sm-4">
 
-       {{#each burgerData}} 
-         {{#if devoured}}
-              <h4>{{burger_name}}</h4>
-         {{/if}}
-       {{/each}}
+      {{#each burgerData}}
+      {{#if devoured}}
+      <h4>{{burger_name}}</h4>
+      {{/if}}
+      {{/each}}
 
     </div>
   </div>
