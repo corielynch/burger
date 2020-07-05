@@ -1,10 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
+            <h3>YOUR ORDER(S)</h3>
+
       {{#each burgerData}}
       {{#unless devoured}}
-      <h4 id='{{id}}'>{{burger_name}} 
-        <button type= "submit" class="devoured">Devoured!</button></h4>
+      <h5 id='{{id}}'>{{burger_name}} 
+        <button type= "submit" class="devoured">Devoured!</button></h5>
       {{/unless}}
       {{/each}}
     </div>
@@ -26,10 +28,10 @@
       <p>Enter a burger you want to eat. Click Submit.</p>
     </div>
     <div class="col-sm-4">
-
+      <h3>DEVOURED BURGER AREA</h3>
       {{#each burgerData}}
       {{#if devoured}}
-      <h4>{{burger_name}}</h4>
+      <h5>{{burger_name}}</h5>
       {{/if}}
       {{/each}}
 
