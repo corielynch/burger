@@ -36,7 +36,7 @@ var orm = {
       queryString += " VALUES (' ";
       queryString += values;
       queryString += " ') ";
-
+      console.log(queryString)
       connection.query(queryString, values, function(err, data) {
         if (err) {
           throw (err);
